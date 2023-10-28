@@ -18,8 +18,8 @@ public class SierpinskiRecursiveNonGUI {
     }//main
     
     static void printTrianglePoints(int order, Point p1, Point p2, Point p3){
-        System.out.printf("Order: %2d  P1(%5.2f, %5.2f)\t " + 
-                          "P2(%5.2f, %5.2f)\t P3(%5.2f, %5.2f)\n", 
+        System.out.printf("Order: %2d  P1(%6.2f, %6.2f)\t " + 
+                          "P2(%6.2f, %6.2f)\t P3(%6.2f, %6.2f)\n", 
                           order, p1.x, p1.y, p2.x, p2.y, p3.x, p3.y);
     }//printTrianglePoints
     
@@ -37,6 +37,5 @@ public class SierpinskiRecursiveNonGUI {
         sierpinskiTriangles(order-1, p2, p12, p23);
         sierpinskiTriangles(order-1, p3, p13, p23);
             
-        
     }//sierpinskiTriangle
 }//class
